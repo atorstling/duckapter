@@ -75,7 +75,7 @@ final class AdaptedClassImpl<O, D> extends AbstractAdaptedClass<O, D> implements
 			}
 			return methods;
 		}
-		return getDetailedClass().getUnimplementedForClass();
+		return getDetailedClass().getUnimplementedForInstance();
 	}
 
 	public Object invoke(Object originalInstance, Method duckMethod,
